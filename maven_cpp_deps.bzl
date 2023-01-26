@@ -63,43 +63,43 @@ def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_headers",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-headers.zip",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-headers.zip",
         sha256 = "6a2dc0d1a4a93a8a4fe114620925a2860b22fd76f0da8ce3ff7a156edd06ecbb",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_sources",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-sources.zip",
-        sha256 = "194a2a7ff2313c53700698eb1f092111fa4cf21f151a9c3538dd224f09ce814c",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-sources.zip",
+        sha256 = "49196c9fb179072d838509c580ec7204d46e3b1f6528950751b438bdd3ecd534",
         build_file_content = cc_library_sources,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_linuxathena",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-linuxathena.zip",
-        sha256 = "ef09455116c700299300752880214191caadf7d356c8ac347a34edff781659ed",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-linuxathena.zip",
+        sha256 = "b609ff0bcff21a1cd452f56a8102c573bf8bb5ba1c06d3e44f8679855b60dd27",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_linuxathenastatic",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-linuxathenastatic.zip",
-        sha256 = "56f419411cc99b4558b0319a2437ac5166571ace8e7af1189e2158ed2a1c4ea3",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-linuxathenastatic.zip",
+        sha256 = "c8212cd4ec1680877d9c3713e56355fb3f86e86699cffda432e4ba4dfc276801",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_windowsx86-64",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-windowsx86-64.zip",
-        sha256 = "2fc07613a22e07b05162cd545d448b512f639ebfea367ac1ecdd64d6e94ed374",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-windowsx86-64.zip",
+        sha256 = "1e23036407f2d3fc3d37a5e5f5326e1734814134bcd79bbc5b2b3d4365134df1",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-cpp_windowsx86-64static",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.435/navx-cpp-4.0.435-windowsx86-64static.zip",
-        sha256 = "503b7bf665f6b57e2532d9a1971d3fe856a66bd0dfd16a0599b91c5b6d4cc449",
+        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.442/navx-cpp-4.0.442-windowsx86-64static.zip",
+        sha256 = "73d76b13e788f8c4adf8cbbcc42c878897cebcb030ff795ea498c9f87352b52d",
         build_file_content = cc_library_static,
     )
 
