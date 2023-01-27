@@ -1,6 +1,6 @@
 module(
     name = "bzlmodrio-navx",
-    version = "2023.0.0",
+    version = "2023.0.1",
     compatibility_level = 2023,
 )
 
