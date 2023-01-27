@@ -62,44 +62,44 @@ cc_library(
 def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_headers",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-headers.zip",
-        sha256 = "f1157a88ed0db1490f466eaf721a5b1f74cc96c1260e01002a892f698a1663ae",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_headers",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-headers.zip",
+        sha256 = "306be67e736de2f85dc922f43f1ec34752767cf905befe2eb7cde680bbaabecb",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_sources",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-sources.zip",
-        sha256 = "11e498c4ed23b462cfb88d84829e41fc97e8bcd5946f72716ca5c514f515b092",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_sources",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-sources.zip",
+        sha256 = "18a4fb8f2a14787f64bb33c1ed5be10bb5c4be72e7c607faa3bb709851c251a5",
         build_file_content = cc_library_sources,
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_linuxathena",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-linuxathena.zip",
-        sha256 = "037a9a6a7dcfbae733a8a5e680478a1cc05493fa0e306f6644ddaf982aa835f5",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathena",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-linuxathena.zip",
+        sha256 = "8acf40c76f2440711b25b0762eec0008f2b8810ae4a9423c3c1ca57685ac6585",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_linuxathenastatic",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-linuxathenastatic.zip",
-        sha256 = "65d1be6609a47d742ab48106b78d054f7c161dcc1b4e3d6d5429c21ed8ec5ef7",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathenastatic",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-linuxathenastatic.zip",
+        sha256 = "4992c6a33d135b214c73fac3c9e7b7cb24c2d5e3a450c5b353332664190e34c7",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_windowsx86-64",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-windowsx86-64.zip",
-        sha256 = "f9b6f9d9e5ab829ea3765b13c0cd4c7e85e6566a68784803d61b8ef0907b8a9f",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-windowsx86-64.zip",
+        sha256 = "780db9926254ea8263f539ca326ea38af935eb39d590c74ddeabd18edd5148d5",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-cpp_windowsx86-64static",
-        url = "https://repo1.maven.org/maven2/com/kauailabs/navx/frc/navx-cpp/4.0.447/navx-cpp-4.0.447-windowsx86-64static.zip",
-        sha256 = "e9e0f42e9bab3794a6fae8031be11472515f852a8623998ba9eb8ee93b18c93f",
+        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64static",
+        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.0/navx-frc-cpp-2023.0.0-windowsx86-64static.zip",
+        sha256 = "5459d899a97f57a64834d1cfce6e5ef900a80921f17f68d220cf12e18787bcd4",
         build_file_content = cc_library_static,
     )
 
