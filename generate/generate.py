@@ -1,9 +1,7 @@
-import sys
 import os
 
 from get_navx_dependencies import get_navx_dependencies
 from bazelrio_gentool.generate_module_project_files import generate_module_project_files
-from bazelrio_gentool.generate_vendordep_raw_libs import generate_vendordep_raw_libs
 from bazelrio_gentool.clean_existing_version import clean_existing_version
 from bazelrio_gentool.generate_module_project_files import (
     create_default_mandatory_settings,
@@ -17,7 +15,7 @@ import argparse
 def main():
     SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
     REPO_DIR = os.path.join(SCRIPT_DIR, "..")
-    output_dir = os.path.join(REPO_DIR, "dependencies")
+    os.path.join(REPO_DIR, "dependencies")
 
     parser = argparse.ArgumentParser()
     add_generic_cli(parser)
