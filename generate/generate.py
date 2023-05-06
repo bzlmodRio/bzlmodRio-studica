@@ -13,7 +13,7 @@ import argparse
 
 
 def main():
-    SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+    SCRIPT_DIR = os.environ["BUILD_WORKSPACE_DIRECTORY"]
     REPO_DIR = os.path.join(SCRIPT_DIR, "..")
     os.path.join(REPO_DIR, "dependencies")
 
