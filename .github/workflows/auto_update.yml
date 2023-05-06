@@ -44,7 +44,7 @@ jobs:
       with:
         repository: 'bzlmodRio/bzlmodrio-allwpilib.git'
         fetch-depth: 0
-        path: libraries/bzlmodrio-navx/../../bzlmodRio-allwpilib
+        path: libraries/bzlmodrio-navx/../../libraries/bzlmodRio-allwpilib
         ref: refactor_dev
 
     # Checkout bzlmodrio-opencv
