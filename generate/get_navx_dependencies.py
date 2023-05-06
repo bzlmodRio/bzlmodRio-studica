@@ -10,7 +10,7 @@ from bazelrio_gentool.deps.dependency_container import (
 def get_navx_dependencies(
     use_local_allwpilib=False, use_local_opencv=False, use_local_ni=False
 ):
-    SCRIPT_DIR = os.environ["BUILD_WORKSPACE_DIRECTORY"]
+    SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
     group = vendordep_dependency(
         "bzlmodrio-navx",
         os.path.join(SCRIPT_DIR, f"vendor_dep.json"),
