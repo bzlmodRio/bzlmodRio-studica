@@ -17,7 +17,7 @@ jobs:
     # Checkout repository
     - uses: actions/checkout@v3
       with:
-        path: rules/bzlmodrio-navx
+        path: libraries/bzlmodrio-navx
 
 
 
@@ -66,7 +66,7 @@ jobs:
 
     # Run publishing
     - run: bazel run //:publish
-      working-directory: rules/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-navx/generate
 
     # Create pull requests
     - name: Create Gentool Pull Request
