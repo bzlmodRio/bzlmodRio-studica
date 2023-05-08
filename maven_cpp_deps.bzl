@@ -118,20 +118,6 @@ def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
     )
     maybe(
         http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64",
-        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.3/navx-frc-cpp-2023.0.3-linuxx86-64.zip",
-        sha256 = "434c48aa3904b3e8e856442546932f9b6c3aa014df99bc891f3950c37e010265",
-        build_file_content = cc_library_shared,
-    )
-    maybe(
-        http_archive,
-        "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64static",
-        url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.3/navx-frc-cpp-2023.0.3-linuxx86-64static.zip",
-        sha256 = "75015c1346f674e8e3ae06612800d6d313c94e2664e425380ec4a4b8f8644600",
-        build_file_content = cc_library_static,
-    )
-    maybe(
-        http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversal",
         url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.3/navx-frc-cpp-2023.0.3-osxuniversal.zip",
         sha256 = "7c4fb66b9c0075c45931c5ebbcebf0b56e4eaa52f1bfedbc10ad50bf9ee897dc",
