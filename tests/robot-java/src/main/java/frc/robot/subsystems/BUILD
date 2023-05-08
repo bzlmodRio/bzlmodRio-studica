@@ -1,3 +1,5 @@
+load("@rules_wpi_styleguide//styleguide:java_styleguide.bzl", "java_styleguide")
+
 java_library(
     name = "subsystems",
     srcs = glob(["*.java"]),
@@ -10,3 +12,5 @@ java_library(
         "@bzlmodrio-navx//libraries/java/navx",
     ],
 )
+
+java_styleguide(name = "commands")
