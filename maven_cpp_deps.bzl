@@ -33,26 +33,43 @@ cc_library(
 """
 
 cc_library_shared = """
-static_srcs = glob(["**/*.lib", "**/*.a"], exclude=["**/*jni.lib"])
-shared_srcs = glob(["**/*.dll", "**/*.so*", "**/*.dylib"], exclude=["**/*jni.dll", "**/*jni.so", "**/*.so.debug", "**/libopencv_java*.dylib"])
-shared_jni_srcs = glob(["**/*jni.dll", "**/*jni.so*", "**/*.jni.dylib", "**/libopencv_java*.dylib"], exclude=["**/*.so.debug"])
+JNI_PATTERN=[
+    "**/*jni.dll",
+    "**/*jni.so*",
+    "**/*jni.dylib",
+    "**/*_java*.dll",
+    "**/lib*_java*.dylib",
+    "**/lib*_java*.so",
+]
 
-cc_library(
+static_srcs = glob([
+        "**/*.lib",
+        "**/*.a"
+    ],
+    exclude=["**/*jni.lib"]
+)
+shared_srcs = glob([
+        "**/*.dll",
+        "**/*.so*",
+        "**/*.dylib",
+    ],
+    exclude=JNI_PATTERN + ["**/*.so.debug"]
+)
+shared_jni_srcs = glob(JNI_PATTERN, exclude=["**/*.so.debug"])
+
+filegroup(
     name = "static_libs",
     srcs = static_srcs,
     visibility = ["//visibility:public"],
 )
 
-cc_library(
+filegroup(
     name = "shared_libs",
     srcs = shared_srcs,
     visibility = ["//visibility:public"],
-    deps = [
-        ":static_libs",
-    ]
 )
 
-cc_library(
+filegroup(
     name = "shared_jni_libs",
     srcs = shared_jni_srcs,
     visibility = ["//visibility:public"],
@@ -136,6 +153,9 @@ def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
         url = "https://dev.studica.com/maven/release/2023/com/kauailabs/navx/frc/navx-frc-cpp/2023.0.3/navx-frc-cpp-2023.0.3-osxuniversal.zip",
         sha256 = "7c4fb66b9c0075c45931c5ebbcebf0b56e4eaa52f1bfedbc10ad50bf9ee897dc",
         build_file_content = cc_library_shared,
+        patch_cmds = [
+            "install_name_tool -id @rpath/libnavx-frc.dylib osx/universal/shared/libnavx-frc.dylib",
+        ],
     )
     maybe(
         http_archive,
