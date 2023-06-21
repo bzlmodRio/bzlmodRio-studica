@@ -17,6 +17,9 @@ def get_navx_dependencies(
         year=2023,
         fail_on_hash_miss=False,
         has_static_libraries=True,
+        install_name_lookup = {
+            "navx-frc-cpp": dict(deps=[], artifact_install_name="navx-frc")
+        }
     )
 
     allwpilib_dependency = ModuleDependency(
