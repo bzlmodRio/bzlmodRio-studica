@@ -3,6 +3,7 @@ load("@rules_bazelrio//:java_rules.bzl", "bazelrio_java_binary", "bazelrio_java_
 bazelrio_java_binary(
     name = "main",
     srcs = ["Main.java"],
+    javacopts = ["-Werror"],
     jvm_flags = [
         "-Djava.library.path=.",
     ],
@@ -23,6 +24,7 @@ bazelrio_java_test(
         "LD_LIBRARY_PATH": ".",
         "PATH": ".",
     },  # TODO fishy
+    javacopts = ["-Werror"],
     jvm_flags = [
         "-Djava.library.path=.",
     ],
