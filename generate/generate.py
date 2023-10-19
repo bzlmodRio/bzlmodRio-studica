@@ -34,7 +34,10 @@ def main():
 
     clean_existing_version(REPO_DIR, extra_dir_blacklist=["navx"])
     generate_module_project_files(
-        REPO_DIR, group, mandatory_dependencies=mandatory_dependencies
+        REPO_DIR,
+        group,
+        mandatory_dependencies=mandatory_dependencies,
+        include_windows_arm_compiler=False,
     )
     # generate_private_raw_libraries(output_dir, group)
 
