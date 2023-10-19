@@ -6,6 +6,7 @@ package frc.robot.subsystems;
 
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.hal.SimDouble;
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.kinematics.DifferentialDriveOdometry;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.RobotBase;
@@ -57,7 +58,7 @@ public class DriveTrain extends SubsystemBase {
         new Encoder(PortMap.kDrivetrainEncoderRightPortA, PortMap.kDrivetrainEncoderRightPortB);
     m_gyro = new AHRS();
 
-    m_odometry = new DifferentialDriveOdometry(m_gyro.getRotation2d(), 0, 0);
+    m_odometry = new DifferentialDriveOdometry(Rotation2d.fromDegrees(m_gyro.getAngle()), 0, 0);
     m_field = new Field2d();
 
     m_leftEncoder.setDistancePerPulse((4.0 / 12.0 * Math.PI) / 360.0);
@@ -109,7 +110,9 @@ public class DriveTrain extends SubsystemBase {
 
   void updateOdometry() {
     m_odometry.update(
-        m_gyro.getRotation2d(), m_leftEncoder.getDistance(), m_rightEncoder.getDistance());
+        Rotation2d.fromDegrees(m_gyro.getAngle()),
+        m_leftEncoder.getDistance(),
+        m_rightEncoder.getDistance());
     m_field.setRobotPose(m_odometry.getPoseMeters());
   }
 

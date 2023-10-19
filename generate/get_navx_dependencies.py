@@ -11,8 +11,8 @@ def get_navx_dependencies(
     use_local_allwpilib=False,
     use_local_opencv=False,
     use_local_ni=False,
-    allwpilib_version_override="2023.3.2",
-    opencv_version_override="4.6.0-4",
+    allwpilib_version_override="2024.1.1-beta-1",
+    opencv_version_override="2024.4.8.0-1",
 ):
     SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
     group = vendordep_dependency(
