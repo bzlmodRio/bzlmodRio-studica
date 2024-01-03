@@ -29,8 +29,8 @@ def download_dependencies():
     # bzlmodrio-allwpilib
     http_archive(
         name = "bzlmodrio-allwpilib",
-        sha256 = "23e77cfedef9b04874161c0f53e486061251c4182be1b623c1281036bcafb72a",
-        url = "https://github.com/bzlmodRio/bzlmodRio-allwpilib/releases/download/2024.1.1-beta-1/bzlmodRio-allwpilib-2024.1.1-beta-1.tar.gz",
+        sha256 = "d47b574e3cbaf75b0719d1467f0b32135d1edee7adf0c3210a410665084834b6",
+        url = "https://github.com/bzlmodRio/bzlmodRio-allwpilib/releases/download/2024.1.1-beta-4/bzlmodRio-allwpilib-2024.1.1-beta-4.tar.gz",
     )
 
     # bzlmodrio-opencv
