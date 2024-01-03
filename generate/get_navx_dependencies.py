@@ -19,7 +19,6 @@ def get_navx_dependencies(
     group = vendordep_dependency(
         "bzlmodrio-navx",
         os.path.join(SCRIPT_DIR, f"vendor_dep.json"),
-        year=2023,
         fail_on_hash_miss=False,
         has_static_libraries=True,
         install_name_lookup={
