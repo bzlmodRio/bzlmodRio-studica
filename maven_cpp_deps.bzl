@@ -80,78 +80,78 @@ def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_headers",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-headers.zip",
-        sha256 = "43d8595094a35846bcf67719d7e07fae15c1446fd68b623604901870a92765c4",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-headers.zip",
+        sha256 = "529b0cffa28af1a69e4916179cffd1c034b7eeb419adca6cdc941cd34bd0c6f0",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_sources",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-sources.zip",
-        sha256 = "2876476fe285aa92c1be42edce9710c6846d200d7e4dc19d93c5b54f41fbc5b2",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-sources.zip",
+        sha256 = "bf4f241c8d77635808361ff29610905caf1aaec487afc57b683b68bdb0d022e4",
         build_file_content = cc_library_sources,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathena",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxathena.zip",
-        sha256 = "ba50f97d5f26e019601cecf6a069378d90a76143f5aefe5151cb149ee45b15f0",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxathena.zip",
+        sha256 = "b4d769a50ad02eded2064f7d927850356e2f5af52e99086b67f05c132c81aeeb",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathenastatic",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxathenastatic.zip",
-        sha256 = "20de4ce826a0ee33c01a2c7be9ef14db09dea249597afdd575026fa0b2e3c47a",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxathenastatic.zip",
+        sha256 = "62566103a535d52c6a93adae98aaf283b40e3937098162748c7cc8994e8514bf",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxarm32.zip",
-        sha256 = "8a482e2e4fe4f23b7643872f527ca011ea6bbf6559eead443a83690c8c8a5194",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm32.zip",
+        sha256 = "9b2fe6c02b8547b9e13d8fa7672aa806b16a06ce817dfb5a1e5f25d2e59b3012",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32static",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxarm32static.zip",
-        sha256 = "98c6ba599d16a6b316b14ed5f59910685b286dc08205436b083c550817c32436",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm32static.zip",
+        sha256 = "81437525d2b7ce54c0cb20493198958e7f52275a70e8996a3be9bbc6ef9d7d85",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxarm64.zip",
-        sha256 = "90cc90e37ebd1cc6e40d4af81bc9b5b307df35197d3e113efa8cbc7dd29a124c",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm64.zip",
+        sha256 = "8575c1d847f4ce9f753d74a85b6ff41b309a802d485784eff15469a8c400fe8c",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64static",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxarm64static.zip",
-        sha256 = "3f6056626c5215879be7d2e725fbe09bb91951a6b8a14af15b64ad50d00cb8a8",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm64static.zip",
+        sha256 = "d1681379262fb8a219c29be889ba5658af4f406e6f964b6f25d26138377f9259",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxx86-64.zip",
-        sha256 = "4966986ba9014ff659b115b0c9b1d43e40a07b493f931fb211c54e4e464c5689",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxx86-64.zip",
+        sha256 = "914047f2b7994abb5ee3140b9d4f5836306f500fbc80ea804b834f199b845de5",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64static",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-linuxx86-64static.zip",
-        sha256 = "8002f5b3730e6990e0d2170e309eaccb5d42458a6a9f401de37164a016603382",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxx86-64static.zip",
+        sha256 = "8a989adbfafb5021825ec4ba61f70c968b4ff463c4d4bfa3b57dc06682552206",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversal",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-osxuniversal.zip",
-        sha256 = "978fd1aa7cfcac8cf8b79fea9c51099bd481d9faf94ec65f1c19712b83041304",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-osxuniversal.zip",
+        sha256 = "f7071c93c955993047334c6371127646ab115b0214d787709ef76e2b986f5939",
         build_file_content = cc_library_shared,
         patch_cmds = [
             "install_name_tool -id @rpath/libnavx-frc.dylib osx/universal/shared/libnavx-frc.dylib",
@@ -160,22 +160,22 @@ def __setup_bzlmodrio_navx_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversalstatic",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-osxuniversalstatic.zip",
-        sha256 = "910df36d7a7838539a0e510444ff7f6c149cb646de8fe82b21d5d492408495e7",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-osxuniversalstatic.zip",
+        sha256 = "dae37dd3dd9acd508bf55911003bc6f90f554c14af371611be32dc70a58dcbe4",
         build_file_content = cc_library_static,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-windowsx86-64.zip",
-        sha256 = "235dd815dfcc49937b6d50c7054d5fc7378228ef07a841032fc879ebdde7d3fe",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-windowsx86-64.zip",
+        sha256 = "5f4c66f623ca7679538cb9d80acfbb85a29c86a53a0542b17406ad1eafafd7dd",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64static",
-        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.0.1-beta-4/navx-frc-cpp-2024.0.1-beta-4-windowsx86-64static.zip",
-        sha256 = "ef41664496f0de7d274ffe6465519c71619862303b6d4f0815d3a1b96c6ffb85",
+        url = "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-windowsx86-64static.zip",
+        sha256 = "75c6e79fc261918e0d120755aa1a7e2291adac99336727624a403e7de09dca98",
         build_file_content = cc_library_static,
     )
 
