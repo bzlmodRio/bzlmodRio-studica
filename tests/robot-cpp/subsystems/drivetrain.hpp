@@ -3,7 +3,6 @@
 #include <frc/Encoder.h>
 #include <frc/drive/DifferentialDrive.h>
 #include <frc/kinematics/DifferentialDriveOdometry.h>
-#include <frc/motorcontrol/MotorControllerGroup.h>
 #include <frc/motorcontrol/PWMVictorSPX.h>
 #include <frc/simulation/DifferentialDrivetrainSim.h>
 #include <frc/simulation/EncoderSim.h>
@@ -38,13 +37,11 @@ private:
 
   frc::PWMVictorSPX m_leftMotorA{kDrivetrainMotorLeftAPort};
   frc::PWMVictorSPX m_leftMotorB{kDrivetrainMotorLeftBPort};
-  frc::MotorControllerGroup m_left{m_leftMotorA, m_leftMotorB};
 
   frc::PWMVictorSPX m_rightMotorA{kDrivetrainMotorRightAPort};
   frc::PWMVictorSPX m_rightMotorB{kDrivetrainMotorRightBPort};
-  frc::MotorControllerGroup m_right{m_rightMotorA, m_rightMotorB};
 
-  frc::DifferentialDrive m_robotDrive{m_left, m_right};
+  frc::DifferentialDrive m_robotDrive{m_leftMotorA, m_rightMotorA};
 
   frc::Encoder m_leftEncoder{kDrivetrainEncoderLeftPortA,
                              kDrivetrainEncoderLeftPortB};
