@@ -1,34 +1,34 @@
 module(
     name = "bzlmodrio-navx",
-    version = "2024.1.0",
-    compatibility_level = 2024,
+    version = "2025.1.1-beta-1",
+    compatibility_level = 2025,
 )
 
 bazel_dep(name = "platforms", version = "0.0.9")
 bazel_dep(name = "rules_cc", version = "0.0.9")
 bazel_dep(name = "rules_java", version = "7.6.5")
 bazel_dep(name = "rules_bzlmodrio_toolchains", version = "2024-1.bcr1")
-bazel_dep(name = "bzlmodrio-allwpilib", version = "2024.1.1")
+bazel_dep(name = "bzlmodrio-allwpilib", version = "2025.1.1-beta-1")
 bazel_dep(name = "bzlmodrio-opencv", version = "2024.4.8.0-4.bcr1")
-bazel_dep(name = "bzlmodrio-ni", version = "2024.2.1.bcr1")
+bazel_dep(name = "bzlmodrio-ni", version = "2025.0.0")
 
 setup_bzlmodrio_navx_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_navx_cpp_dependencies")
 use_repo(
     setup_bzlmodrio_navx_cpp_dependencies,
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_headers",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32static",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64static",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathena",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathenastatic",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64static",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversal",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversalstatic",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_sources",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64",
-    "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64static",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_headers",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxarm32",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxarm32static",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxarm64",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxarm64static",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxathena",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxathenastatic",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxx86-64",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_linuxx86-64static",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_osxuniversal",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_osxuniversalstatic",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_sources",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_windowsx86-64",
+    "bazelrio_com_kauailabs_navx_frc_navx_frc-cpp_windowsx86-64static",
 )
 
 setup_bzlmodrio_navx_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_navx_java_dependencies")
