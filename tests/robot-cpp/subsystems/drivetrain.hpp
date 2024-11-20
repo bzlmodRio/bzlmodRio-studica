@@ -15,7 +15,7 @@
 #include "robot-cpp/subsystems/ports.hpp"
 
 class DriveTrain : public frc2::SubsystemBase {
-public:
+ public:
   DriveTrain();
 
   void ArcadeDrive(double throttle, double rotation);
@@ -32,7 +32,7 @@ public:
 
   void SimulationPeriodic() override;
 
-private:
+ private:
   void Log();
 
   frc::PWMVictorSPX m_leftMotorA{kDrivetrainMotorLeftAPort};
