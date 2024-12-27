@@ -1,5 +1,5 @@
 module(
-    name = "bzlmodrio-navx",
+    name = "bzlmodrio-studica",
     version = "2025.1.1-beta-4",
     compatibility_level = 2025,
 )
@@ -12,9 +12,9 @@ bazel_dep(name = "bzlmodrio-allwpilib", version = "2025.1.1-beta-3")
 bazel_dep(name = "bzlmodrio-opencv", version = "2025.4.10.0-2")
 bazel_dep(name = "bzlmodrio-ni", version = "2025.0.0")
 
-setup_bzlmodrio_navx_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_navx_cpp_dependencies")
+setup_bzlmodrio_studica_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_studica_cpp_dependencies")
 use_repo(
-    setup_bzlmodrio_navx_cpp_dependencies,
+    setup_bzlmodrio_studica_cpp_dependencies,
     "bazelrio_com_studica_frc_studica-cpp_headers",
     "bazelrio_com_studica_frc_studica-cpp_linuxarm32",
     "bazelrio_com_studica_frc_studica-cpp_linuxarm32static",
@@ -43,8 +43,8 @@ use_repo(
     "bazelrio_com_studica_frc_studica-driver_windowsx86-64static",
 )
 
-setup_bzlmodrio_navx_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_navx_java_dependencies")
+setup_bzlmodrio_studica_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_studica_java_dependencies")
 use_repo(
-    setup_bzlmodrio_navx_java_dependencies,
+    setup_bzlmodrio_studica_java_dependencies,
     "com_studica_frc_studica_java",
 )

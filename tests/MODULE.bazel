@@ -1,6 +1,6 @@
-bazel_dep(name = "bzlmodrio-navx", version = "")
+bazel_dep(name = "bzlmodrio-studica", version = "")
 local_path_override(
-    module_name = "bzlmodrio-navx",
+    module_name = "bzlmodrio-studica",
     path = "..",
 )
 

@@ -26,12 +26,12 @@ shared_jni_srcs = glob(JNI_PATTERN, exclude=["**/*.so.debug"])
 filegroup(
     name = "shared_interface",
     srcs = static_srcs,
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
 )
 
 filegroup(
     name = "shared",
     srcs = shared_srcs,
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
 )
 

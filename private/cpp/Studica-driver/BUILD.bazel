@@ -3,7 +3,7 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 alias(
     name = "header_files",
     actual = "@bazelrio_com_studica_frc_studica-driver_headers//:header_files",
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
 )
 
 cc_library(
@@ -17,7 +17,7 @@ cc_library(
         "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
     deps = ["@bazelrio_com_studica_frc_studica-driver_headers//:headers"],
 )
 
@@ -32,7 +32,7 @@ filegroup(
         "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@bazelrio_com_studica_frc_studica-driver_linuxathena//:shared"],
         "//conditions:default": [],
     }),
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
 )
 
 cc_library(
@@ -42,7 +42,7 @@ cc_library(
         "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
     deps = [] + select({
         "@rules_bzlmodrio_toolchains//conditions:windows": [":shared_interface"],
         "//conditions:default": [],
@@ -57,7 +57,7 @@ cc_library(
         "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
         "//conditions:default": [],
     }),
-    visibility = ["@bzlmodrio-navx//:__subpackages__"],
+    visibility = ["@bzlmodrio-studica//:__subpackages__"],
     deps = ["@bazelrio_com_studica_frc_studica-driver_headers//:headers"] + select({
         "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_com_studica_frc_studica-driver_linuxx86-64static//:static_libs"],
         "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_com_studica_frc_studica-driver_osxuniversalstatic//:static_libs"],

@@ -10,7 +10,7 @@ bazelrio_java_binary(
     ],
     main_class = "studicajava.Main",
     deps = [
-        "@bzlmodrio-navx//libraries/java/studica-java",
+        "@bzlmodrio-studica//libraries/java/studica-java",
     ],
 )
 
@@ -38,11 +38,11 @@ bazelrio_java_test(
         "@maven//:org_junit_platform_junit_platform_suite_api",
     ],
     deps = [
-        "@bzlmodrio-navx//libraries/java/studica-java",
+        "@bzlmodrio-studica//libraries/java/studica-java",
         "@maven//:org_junit_jupiter_junit_jupiter_api",
         "@maven//:org_junit_jupiter_junit_jupiter_engine",
         "@maven//:org_junit_jupiter_junit_jupiter_params",
     ],
 )
 
-java_styleguide(name = "navx")
+java_styleguide(name = "studica")

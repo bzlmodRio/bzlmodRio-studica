@@ -29,7 +29,7 @@ def get_navx_dependencies(
     )
 
     group = vendordep_dependency(
-        "bzlmodrio-navx",
+        "bzlmodrio-studica",
         os.path.join(SCRIPT_DIR, f"vendor_dep.json"),
         fail_on_hash_miss=False,
         has_static_libraries=True,

@@ -6,6 +6,6 @@ java_import(
     visibility = ["//visibility:public"],
     deps = [
         "@bzlmodrio-allwpilib//libraries/java/wpilibj",
-        "@bzlmodrio-navx//private/cpp/Studica-driver:shared",
+        "@bzlmodrio-studica//private/cpp/Studica-driver:shared",
     ],
 )
