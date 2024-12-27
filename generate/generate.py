@@ -9,7 +9,7 @@ from bazelrio_gentool.generate_module_project_files import (
     generate_module_project_files,
 )
 from bazelrio_gentool.manual_cleanup_helper import manual_cleanup_helper
-from get_navx_dependencies import get_navx_dependencies
+from get_studica_dependencies import get_studica_dependencies
 
 # from bazelrio_gentool.generate_group import generate_private_raw_libraries
 
@@ -26,7 +26,7 @@ def main():
     parser.add_argument("--use_local_ni", action="store_true")
     args = parser.parse_args()
 
-    group = get_navx_dependencies(
+    group = get_studica_dependencies(
         use_local_allwpilib=args.use_local_allwpilib,
         use_local_opencv=args.use_local_opencv,
         use_local_ni=args.use_local_ni,
@@ -53,6 +53,10 @@ def manual_cleanup(repo_dir):
         lambda x: x.replace("@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"),
     )
     manual_cleanup_helper(
+        os.path.join(repo_dir, "libraries", "cpp", "studica-driver", "BUILD.bazel"),
+        lambda x: x.replace("@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"),
+    )
+    manual_cleanup_helper(
         os.path.join(repo_dir, "libraries", "java", "studica-java", "BUILD.bazel"),
         lambda x: x.replace(
             "@bzlmodrio-studica//libraries/cpp/studica-driver:jni",
@@ -63,6 +67,6 @@ def manual_cleanup(repo_dir):
 
 if __name__ == "__main__":
     """
-    bazel run @bzlmodrio-navx//generate:generate_navx
+    bazel run @bzlmodrio-studica//generate:generate_studica
     """
     main()

@@ -5,7 +5,7 @@ from bazelrio_gentool.load_vendordep_dependency import vendordep_dependency
 from get_allwpilib_dependencies import get_allwpilib_dependencies
 
 
-def get_navx_dependencies(
+def get_studica_dependencies(
     use_local_allwpilib=False,
     use_local_opencv=False,
     use_local_ni=False,
@@ -34,7 +34,7 @@ def get_navx_dependencies(
         fail_on_hash_miss=False,
         has_static_libraries=True,
         install_name_lookup={
-            "navx-frc-cpp": dict(deps=[], artifact_install_name="navx-frc")
+            "studica-frc-cpp": dict(deps=[], artifact_install_name="studica-frc")
         },
     )
     group.add_module_dependency(allwpilib_dependency)

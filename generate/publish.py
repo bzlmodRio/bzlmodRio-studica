@@ -2,7 +2,7 @@ import os
 
 from bazelrio_gentool.publish_module import publish_module
 from bazelrio_gentool.utils import TEMPLATE_BASE_DIR
-from get_navx_dependencies import get_navx_dependencies
+from get_studica_dependencies import get_studica_dependencies
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
         SCRIPT_DIR, "..", "..", "..", "bazel-central-registry"
     )
 
-    group = get_navx_dependencies()
+    group = get_studica_dependencies()
 
     module_template = os.path.join(
         TEMPLATE_BASE_DIR, "library_wrapper", "MODULE.bazel.jinja2"
@@ -28,6 +28,6 @@ def main():
 
 if __name__ == "__main__":
     """
-    bazel run @bzlmodrio-navx//generate:publish_navx
+    bazel run @bzlmodrio-studica//generate:publish_studica
     """
     main()

@@ -1,8 +1,8 @@
-from get_navx_dependencies import get_navx_dependencies
+from get_studica_dependencies import get_studica_dependencies
 
 
 def main():
-    group = get_navx_dependencies()
+    group = get_studica_dependencies()
     print(group.version)
 
 
