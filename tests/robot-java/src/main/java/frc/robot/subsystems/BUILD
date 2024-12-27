@@ -11,7 +11,7 @@ java_library(
         "@bzlmodrio-allwpilib//libraries/java/wpilibNewCommands",
         "@bzlmodrio-allwpilib//libraries/java/wpilibj",
         "@bzlmodrio-allwpilib//libraries/java/wpimath",
-        "@bzlmodrio-navx//libraries/java/navx-java",
+        "@bzlmodrio-navx//libraries/java/studica-java",
     ],
 )
 

@@ -1,7 +1,7 @@
 load("@rules_java//java:defs.bzl", "java_import")
 
 java_import(
-    name = "navx-java",
+    name = "studica-java",
     jars = ["@com_studica_frc_studica_java//jar:file"],
     visibility = ["//visibility:public"],
     deps = [

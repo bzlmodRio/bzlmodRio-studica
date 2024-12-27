@@ -8,9 +8,9 @@ bazelrio_java_binary(
     jvm_flags = [
         "-Djava.library.path=.",
     ],
-    main_class = "navxjava.Main",
+    main_class = "studicajava.Main",
     deps = [
-        "@bzlmodrio-navx//libraries/java/navx-java",
+        "@bzlmodrio-navx//libraries/java/studica-java",
     ],
 )
 
@@ -19,7 +19,7 @@ bazelrio_java_test(
     srcs = ["BasicTest.java"],
     args = [
         "--select-package",
-        "navxjava",
+        "studicajava",
     ],
     javacopts = ["-Werror"],
     jvm_flags = [
@@ -38,7 +38,7 @@ bazelrio_java_test(
         "@maven//:org_junit_platform_junit_platform_suite_api",
     ],
     deps = [
-        "@bzlmodrio-navx//libraries/java/navx-java",
+        "@bzlmodrio-navx//libraries/java/studica-java",
         "@maven//:org_junit_jupiter_junit_jupiter_api",
         "@maven//:org_junit_jupiter_junit_jupiter_engine",
         "@maven//:org_junit_jupiter_junit_jupiter_params",

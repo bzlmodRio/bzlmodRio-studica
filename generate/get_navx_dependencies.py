@@ -40,23 +40,29 @@ def get_navx_dependencies(
     group.add_module_dependency(allwpilib_dependency)
 
     group.add_cc_meta_dependency(
-        "navx-cpp",
+        "studica-driver",
+        deps=[
+            "Studica-driver",
+        ],
+        platform_deps={},
+    )
+
+    group.add_cc_meta_dependency(
+        "studica-cpp",
         deps=[
             "Studica-cpp",
             "Studica-driver",
             "wpilibc-cpp",
         ],
         platform_deps={},
-        jni_deps={
-            # TODO
-        },
     )
 
     group.add_java_meta_dependency(
-        "navx-java",
-        group_id=f"studica",
+        "studica-java",
+        group_id=f"com_studica_frc",
         deps=[
             "wpilibj-java",
+            "studica-driver",
         ],
     )
 

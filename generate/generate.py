@@ -8,6 +8,7 @@ from bazelrio_gentool.generate_module_project_files import (
     create_default_mandatory_settings,
     generate_module_project_files,
 )
+from bazelrio_gentool.manual_cleanup_helper import manual_cleanup_helper
 from get_navx_dependencies import get_navx_dependencies
 
 # from bazelrio_gentool.generate_group import generate_private_raw_libraries
@@ -42,6 +43,23 @@ def main():
         include_bullseye_compiler=False,
     )
     generate_meta_deps(output_dir, group, force_tests=args.force_tests)
+
+    manual_cleanup(REPO_DIR)
+
+
+def manual_cleanup(repo_dir):
+    manual_cleanup_helper(
+        os.path.join(repo_dir, "libraries", "cpp", "studica-cpp", "BUILD.bazel"),
+        lambda x: x.replace(
+            "@bzlmodrio-navx//libraries", "@bzlmodrio-navx//private"
+        ),
+    )
+    manual_cleanup_helper(
+        os.path.join(repo_dir, "libraries", "java", "studica-java", "BUILD.bazel"),
+        lambda x: x.replace(
+            "@bzlmodrio-navx//libraries/cpp/studica-driver:jni", "@bzlmodrio-navx//private/cpp/Studica-driver:shared"
+        ),
+    )
 
 
 if __name__ == "__main__":

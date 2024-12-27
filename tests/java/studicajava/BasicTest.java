@@ -1,4 +1,4 @@
-package navxjava;
+package studicajava;
 
 import com.studica.frc.AHRS;
 import org.junit.jupiter.api.Test;
