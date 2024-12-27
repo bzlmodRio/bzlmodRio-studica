@@ -3,8 +3,8 @@
 #include <iostream>
 #include <thread>
 
-#include "studica/AHRS.h"
 #include "gtest/gtest.h"
+#include "studica/AHRS.h"
 
 TEST(BasicTest, Basic) {
   std::cout << "Hello World" << std::endl;

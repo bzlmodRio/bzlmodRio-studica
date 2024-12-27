@@ -11,8 +11,8 @@
 #include <frc2/command/SubsystemBase.h>
 #include <hal/SimDevice.h>
 
-#include "studica/AHRS.h"
 #include "robot-cpp/subsystems/ports.hpp"
+#include "studica/AHRS.h"
 
 class DriveTrain : public frc2::SubsystemBase {
  public:
