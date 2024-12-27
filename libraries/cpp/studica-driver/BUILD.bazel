@@ -1,0 +1,16 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+alias(
+    name = "studica-driver",
+    actual = ":shared",
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "shared",
+    linkstatic = 1,
+    visibility = ["//visibility:public"],
+    deps = [
+        "@bzlmodrio-navx//libraries/cpp/Studica-driver:shared",
+    ],
+)
