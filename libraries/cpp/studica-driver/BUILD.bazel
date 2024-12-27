@@ -11,6 +11,6 @@ cc_library(
     linkstatic = 1,
     visibility = ["//visibility:public"],
     deps = [
-        "@bzlmodrio-navx//libraries/cpp/Studica-driver:shared",
+        "@bzlmodrio-navx//private/cpp/Studica-driver:shared",
     ],
 )
