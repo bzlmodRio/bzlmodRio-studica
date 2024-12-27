@@ -1,8 +1,8 @@
 load("@rules_python//python:defs.bzl", "py_binary", "py_library")
 
 py_library(
-    name = "get_navx_dependencies",
-    srcs = ["get_navx_dependencies.py"],
+    name = "get_studica_dependencies",
+    srcs = ["get_studica_dependencies.py"],
     visibility = ["//visibility:public"],
     deps = [
         "@bzlmodrio-allwpilib-gentool//:get_allwpilib_dependencies",
@@ -14,7 +14,7 @@ py_binary(
     name = "generate",
     srcs = ["generate.py"],
     deps = [
-        ":get_navx_dependencies",
+        ":get_studica_dependencies",
         "@bzlmodrio-gentool//bazelrio_gentool",
     ],
 )
@@ -23,7 +23,7 @@ py_binary(
     name = "publish",
     srcs = ["publish.py"],
     deps = [
-        ":get_navx_dependencies",
+        ":get_studica_dependencies",
         "@bzlmodrio-gentool//bazelrio_gentool",
     ],
 )
@@ -42,7 +42,7 @@ py_binary(
     srcs = ["get_version.py"],
     visibility = ["//visibility:public"],
     deps = [
-        ":get_navx_dependencies",
+        ":get_studica_dependencies",
         "@bzlmodrio-gentool//bazelrio_gentool",
     ],
 )

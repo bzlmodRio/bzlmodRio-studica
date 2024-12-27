@@ -4,7 +4,7 @@ cc_binary(
     name = "main",
     srcs = ["main.cpp"],
     # deps = ["@com_github_google_glog//:glog"],
-    deps = ["@bzlmodrio-navx//libraries/cpp/navx"],
+    deps = ["@bzlmodrio-studica//libraries/cpp/studica-cpp"],
 )
 
 cc_test(
@@ -15,7 +15,7 @@ cc_test(
         "no-sandbox",
     ],
     deps = [
-        "@bzlmodrio-navx//libraries/cpp/navx",
+        "@bzlmodrio-studica//libraries/cpp/studica-cpp",
         "@googletest//:gtest_main",
     ],
 )

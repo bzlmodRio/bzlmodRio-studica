@@ -8,6 +8,6 @@ cc_library(
     deps = [
         "@bzlmodrio-allwpilib//libraries/cpp/wpilibNewCommands",
         "@bzlmodrio-allwpilib//libraries/cpp/wpilibc",
-        "@bzlmodrio-navx//libraries/cpp/navx",
+        "@bzlmodrio-studica//libraries/cpp/studica-cpp",
     ],
 )

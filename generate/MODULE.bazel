@@ -1,5 +1,5 @@
 module(
-    name = "bzlmodrio-navx-gentool",
+    name = "bzlmodrio-studica-gentool",
 )
 
 bazel_dep(name = "rules_python", version = "0.24.0")

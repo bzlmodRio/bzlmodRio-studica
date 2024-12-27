@@ -1,16 +1,16 @@
 load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 
-def __setup_bzlmodrio_navx_java_dependencies(mctx):
+def __setup_bzlmodrio_studica_java_dependencies(mctx):
     jvm_maven_import_external(
-        name = "com_kauailabs_navx_frc_navx_frc_java",
-        artifact = "com.kauailabs.navx.frc:navx_frc-java:2025.1.1-beta-1",
-        artifact_sha256 = "8c0f98dc881f821928fa33b4375ad1458708035a9cb878c20fc7357e5d82e1bf",
+        name = "com_studica_frc_studica_java",
+        artifact = "com.studica.frc:Studica-java:2025.1.1-beta-4",
+        artifact_sha256 = "266be0cadcaaa2c41334020831493355cd004dbdb02967c4acefbaaf05f74c55",
         server_urls = ["https://dev.studica.com/maven/release/2025"],
     )
 
-def setup_legacy_bzlmodrio_navx_java_dependencies():
-    __setup_bzlmodrio_navx_java_dependencies(None)
+def setup_legacy_bzlmodrio_studica_java_dependencies():
+    __setup_bzlmodrio_studica_java_dependencies(None)
 
-setup_bzlmodrio_navx_java_dependencies = module_extension(
-    __setup_bzlmodrio_navx_java_dependencies,
+setup_bzlmodrio_studica_java_dependencies = module_extension(
+    __setup_bzlmodrio_studica_java_dependencies,
 )

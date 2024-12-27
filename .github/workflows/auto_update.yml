@@ -31,7 +31,7 @@ jobs:
     # Checkout repository
     - uses: actions/checkout@v4
       with:
-        path: libraries/bzlmodrio-navx
+        path: libraries/bzlmodrio-studica
 
     # Checkout gentool
     - uses: actions/checkout@v4
@@ -47,7 +47,7 @@ jobs:
       with:
         repository: 'bzlmodRio/bzlmodrio-allwpilib.git'
         fetch-depth: 0
-        path: libraries/bzlmodrio-navx/../../libraries/bzlmodRio-allwpilib
+        path: libraries/bzlmodrio-studica/../../libraries/bzlmodRio-allwpilib
         ref: main
 
     # Checkout backdoor generation of wpilibsuite libraries
@@ -73,7 +73,7 @@ jobs:
     # Run update
     - name: Run update
       run: bazel run //:auto_update
-      working-directory: libraries/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-studica/generate
 
     - name: Generate if changed
       run: |
@@ -92,11 +92,11 @@ jobs:
         else
           echo "No changes!"
         fi;
-      working-directory: libraries/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-studica/generate
 
     - name: Store new version
       run: echo "NEW_VERSION=$(bazel run //:get_version)" >> $GITHUB_ENV
-      working-directory: libraries/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-studica/generate
 
     # Create pull requests
     - name: Create Pull Request
@@ -104,7 +104,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.AUTO_UPDATE_KEY }}
       with:
-        path: libraries/bzlmodrio-navx
+        path: libraries/bzlmodrio-studica
         base: main
         token: ${{ secrets.AUTO_UPDATE_KEY }}
         branch: autoupdate_${{ env.NEW_VERSION }}

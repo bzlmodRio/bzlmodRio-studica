@@ -11,8 +11,8 @@
 #include <frc2/command/SubsystemBase.h>
 #include <hal/SimDevice.h>
 
-#include "AHRS.h"
 #include "robot-cpp/subsystems/ports.hpp"
+#include "studica/AHRS.h"
 
 class DriveTrain : public frc2::SubsystemBase {
  public:
@@ -47,7 +47,7 @@ class DriveTrain : public frc2::SubsystemBase {
                              kDrivetrainEncoderLeftPortB};
   frc::Encoder m_rightEncoder{kDrivetrainEncoderRightPortA,
                               kDrivetrainEncoderRightPortB};
-  AHRS m_gyro;
+  studica::AHRS m_gyro;
 
   frc::DifferentialDriveOdometry m_odometry{m_gyro.GetRotation2d(), 0_m, 0_m};
   frc::Field2d m_field;

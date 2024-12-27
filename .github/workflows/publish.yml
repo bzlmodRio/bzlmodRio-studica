@@ -17,14 +17,14 @@ jobs:
     # Checkout repository
     - uses: actions/checkout@v4
       with:
-        path: libraries/bzlmodrio-navx
+        path: libraries/bzlmodrio-studica
 
     - name: Create Archive
-      run: git archive HEAD --format=tar.gz --output="bzlmodrio-navx-${GITHUB_REF_NAME}.tar.gz"
-      working-directory: libraries/bzlmodrio-navx
+      run: git archive HEAD --format=tar.gz --output="bzlmodrio-studica-${GITHUB_REF_NAME}.tar.gz"
+      working-directory: libraries/bzlmodrio-studica
 
     - name: Setup archive name
-      run: echo "ARCHIVE_NAME=libraries/bzlmodrio-navx/bzlmodrio-navx-${GITHUB_REF_NAME}.tar.gz" >> "$GITHUB_ENV"
+      run: echo "ARCHIVE_NAME=libraries/bzlmodrio-studica/bzlmodrio-studica-${GITHUB_REF_NAME}.tar.gz" >> "$GITHUB_ENV"
 
     - name: Release
       uses: softprops/action-gh-release@v2
@@ -38,7 +38,7 @@ jobs:
       with:
         repository: 'bzlmodRio/bzlmodrio-allwpilib.git'
         fetch-depth: 0
-        path: libraries/bzlmodrio-navx/../../libraries/bzlmodRio-allwpilib
+        path: libraries/bzlmodrio-studica/../../libraries/bzlmodRio-allwpilib
         ref: main
 
     # Checkout backdoor generation of wpilibsuite libraries
@@ -69,11 +69,11 @@ jobs:
 
     # Run publishing
     - run: bazel run //:publish
-      working-directory: libraries/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-studica/generate
 
     - name: Store version
       run: echo "NEW_VERSION=$(bazel run //:get_version)" >> $GITHUB_ENV
-      working-directory: libraries/bzlmodrio-navx/generate
+      working-directory: libraries/bzlmodrio-studica/generate
 
 
     # Create pull requests
@@ -85,8 +85,8 @@ jobs:
         path: gentool
         base: refactor_dev
         token: ${{ secrets.AUTO_UPDATE_KEY }}
-        branch: autoupdate/bzlmodrio-navx_update_${{ env.NEW_VERSION }}
-        title: "Auto Update bzlmodrio-navx module to '${{ env.NEW_VERSION }}'"
+        branch: autoupdate/bzlmodrio-studica_update_${{ env.NEW_VERSION }}
+        title: "Auto Update bzlmodrio-studica module to '${{ env.NEW_VERSION }}'"
 
     - name: Create BCR Pull Request
       uses: peter-evans/create-pull-request@v6
@@ -96,5 +96,5 @@ jobs:
         path: bazel-central-registry
         base: bzlmodrio
         token: ${{ secrets.AUTO_UPDATE_KEY }}
-        branch: autoupdate/bzlmodrio-navx_update_${{ env.NEW_VERSION }}
-        title: "Auto Update latest bzlmodrio-navx to '${{ env.NEW_VERSION }}'"
+        branch: autoupdate/bzlmodrio-studica_update_${{ env.NEW_VERSION }}
+        title: "Auto Update latest bzlmodrio-studica to '${{ env.NEW_VERSION }}'"
