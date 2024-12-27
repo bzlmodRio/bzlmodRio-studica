@@ -50,11 +50,15 @@ def main():
 def manual_cleanup(repo_dir):
     manual_cleanup_helper(
         os.path.join(repo_dir, "libraries", "cpp", "studica-cpp", "BUILD.bazel"),
-        lambda x: x.replace("@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"),
+        lambda x: x.replace(
+            "@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"
+        ),
     )
     manual_cleanup_helper(
         os.path.join(repo_dir, "libraries", "cpp", "studica-driver", "BUILD.bazel"),
-        lambda x: x.replace("@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"),
+        lambda x: x.replace(
+            "@bzlmodrio-studica//libraries", "@bzlmodrio-studica//private"
+        ),
     )
     manual_cleanup_helper(
         os.path.join(repo_dir, "libraries", "java", "studica-java", "BUILD.bazel"),
