@@ -8,7 +8,7 @@
 #include <numbers>
 
 DriveTrain::DriveTrain()
-    : m_gyro(frc::SPI::Port::kMXP),
+    : m_gyro(studica::AHRS::kMXP_SPI),
       m_drivetrainSimulator(
           frc::sim::DifferentialDrivetrainSim::CreateKitbotSim(
               frc::sim::DifferentialDrivetrainSim::KitbotMotor::DualCIMPerSide,
