@@ -43,6 +43,7 @@ def get_studica_dependencies(
         "studica-driver",
         deps=[
             "Studica-driver",
+            "hal-cpp",
         ],
         platform_deps={},
     )
