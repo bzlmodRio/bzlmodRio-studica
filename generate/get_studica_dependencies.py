@@ -57,6 +57,7 @@ def get_studica_dependencies(
         deps=[
             "Studica-driver",
             "hal-cpp",
+            "wpimath-cpp",
         ],
         platform_deps={},
     )
