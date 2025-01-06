@@ -34,7 +34,19 @@ def get_studica_dependencies(
         fail_on_hash_miss=False,
         has_static_libraries=True,
         install_name_lookup={
-            "studica-frc-cpp": dict(deps=[], artifact_install_name="studica-frc")
+            "Studica-driver": dict(
+                artifact_install_name="StudicaDriver",
+                deps=[
+                    allwpilib_dependency.container.get_cc_dependency("hal-cpp"),
+                ], 
+            ),
+            "Studica-cpp": dict(
+                artifact_install_name="Studica",
+                deps=[
+                    allwpilib_dependency.container.get_cc_dependency("wpiutil-cpp"),
+                    allwpilib_dependency.container.get_cc_dependency("ntcore-cpp"),
+                ], 
+            )
         },
     )
     group.add_module_dependency(allwpilib_dependency)

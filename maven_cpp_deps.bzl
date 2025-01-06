@@ -92,6 +92,12 @@ def __setup_bzlmodrio_studica_cpp_dependencies(mctx):
         url = "https://dev.studica.com/maven/release/2025/com/studica/frc/Studica-cpp/2025.0.0/Studica-cpp-2025.0.0-osxuniversal.zip",
         sha256 = "a666584947174390ee2cba944f572ef9545275f31d5cf514d70ed1631b8c3968",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
+        patch_cmds = [
+            "install_name_tool -id @rpath/libStudica.dylib osx/universal/shared/libStudica.dylib",
+            "install_name_tool -change libntcore.dylib @rpath/libntcore.dylib osx/universal/shared/libStudica.dylib",
+            "install_name_tool -change libwpinet.dylib @rpath/libwpinet.dylib osx/universal/shared/libStudica.dylib",
+            "install_name_tool -change libwpiutil.dylib @rpath/libwpiutil.dylib osx/universal/shared/libStudica.dylib",
+        ],
     )
     maybe(
         http_archive,
@@ -183,6 +189,11 @@ def __setup_bzlmodrio_studica_cpp_dependencies(mctx):
         url = "https://dev.studica.com/maven/release/2025/com/studica/frc/Studica-driver/2025.0.0/Studica-driver-2025.0.0-osxuniversal.zip",
         sha256 = "646c13b597680537ee72cc69c3c2c5af1a159a455bad89ae4758825dcf86e7be",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
+        patch_cmds = [
+            "install_name_tool -id @rpath/libStudicaDriver.dylib osx/universal/shared/libStudicaDriver.dylib",
+            "install_name_tool -change libwpiHal.dylib @rpath/libwpiHal.dylib osx/universal/shared/libStudicaDriver.dylib",
+            "install_name_tool -change libwpiutil.dylib @rpath/libwpiutil.dylib osx/universal/shared/libStudicaDriver.dylib",
+        ],
     )
     maybe(
         http_archive,
