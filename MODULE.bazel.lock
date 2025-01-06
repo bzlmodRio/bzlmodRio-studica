@@ -19,12 +19,12 @@
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bazel_skylib/1.6.1/source.json": "082ed5f9837901fada8c68c2f3ddc958bb22b6d654f71dd73f3df30d45d4b749",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/buildozer/7.1.2/MODULE.bazel": "2e8dd40ede9c454042645fd8d8d0cd1527966aa5c919de86661e62953cd73d84",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/buildozer/7.1.2/source.json": "c9028a501d2db85793a6996205c8de120944f50a0d570438fcae0457a5f9d1f8",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-allwpilib/2025.1.1-beta-1/MODULE.bazel": "c6369bd470edee013e89f371a9df5e122999a40f8603399830a4bd15cfd50fa8",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-allwpilib/2025.1.1-beta-1/source.json": "de7c21b8ebe7c8e5ed0bd3a073dea9b39b054dbb2321bcf27470d71068c48d1a",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-ni/2025.0.0/MODULE.bazel": "a32b92d4435358e2497161822a22f688ab2087eb24676728ef60ef56a366a103",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-ni/2025.0.0/source.json": "c27e1571d3ad44b1aa51037b67626a97d607f942190aba397e56c77c25d15d16",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-opencv/2024.4.8.0-4.bcr1/MODULE.bazel": "3806bdb1616481bd28a59e3c1ef0e145c88075409e610dda074fce45814f468d",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-opencv/2024.4.8.0-4.bcr1/source.json": "c4ccec4d3254baff1671b26f42dc0523b250c188eb6d9c426c04fd2186090e5e",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-allwpilib/2025.1.1/MODULE.bazel": "68923c005434e1e9997c2e789cefd9a8e59e33b007175057ad35a1b1ff8c7101",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-allwpilib/2025.1.1/source.json": "a13a157566289b1dd8854b453f59aa93bf400ae9f0f49fbfcb8a4a77d99464ca",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-ni/2025.2.0/MODULE.bazel": "fd025736011d827a3a690bb584a1e4e1748f66fd6c235cc9b597b734ae10db1a",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-ni/2025.2.0/source.json": "e6d857af816f6302f506f00da0544fab8d857b4399226139d5c2cb1af8d1a8f5",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-opencv/2025.4.10.0-3/MODULE.bazel": "c0d38bd480a3dea8d31632634c485ad2f0a0ccb1961ad88c6fcf523e462b96b7",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/bzlmodrio-opencv/2025.4.10.0-3/source.json": "7fe07bc2e22514997ae841ac597efdc623d6f3a558835e1fbe331d775a431163",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/googletest/1.11.0/MODULE.bazel": "3a83f095183f66345ca86aa13c58b59f9f94a2f81999c093d4eeaa2d262d12f4",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/googletest/1.11.0/source.json": "c73d9ef4268c91bd0c1cd88f1f9dfa08e814b1dbe89b5f594a9f08ba0244d206",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/platforms/0.0.4/MODULE.bazel": "9b328e31ee156f53f3c416a64f8491f7eb731742655a47c9eec4703a71644aee",
@@ -40,8 +40,9 @@
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/protobuf/3.19.6/MODULE.bazel": "9233edc5e1f2ee276a60de3eaa47ac4132302ef9643238f23128fea53ea12858",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_android/0.1.1/MODULE.bazel": "48809ab0091b07ad0182defb787c4c5328bd3a278938415c00a7b69b50c4d3a8",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_android/0.1.1/source.json": "e6986b41626ee10bdc864937ffb6d6bf275bb5b9c65120e6137d56e6331f089e",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bzlmodrio_toolchains/2024-1.bcr1/MODULE.bazel": "c9eb05f0f01e748a5d923d56e6f846f01c630e823f01d79d40f2b04638cc43f7",
-    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bzlmodrio_toolchains/2024-1.bcr1/source.json": "ede33537e659d196e38226a94a3d8543b739f38f7ced571745cb469f6adebd02",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bzlmodrio_toolchains/2025-1.bcr1/MODULE.bazel": "a4251b7577b3e1dcdf5ac97363672a79d0a000dffae768df5997e1489a0440db",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bzlmodrio_toolchains/2025-1.bcr1/source.json": "383845de7921f624b577b821419b3e024f8c91393b6f9b201103180447e99693",
+    "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_bzlmodrio_toolchains/2025-1/MODULE.bazel": "81e540a541aac221fc84fc24124b8e5d07e2eff75942f44e67510c56794a5f22",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_cc/0.0.1/MODULE.bazel": "cb2aa0747f84c6c3a78dad4e2049c154f08ab9d166b1273835a8174940365647",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_cc/0.0.2/MODULE.bazel": "6915987c90970493ab97393024c156ea8fb9f3bea953b2f3ec05c34f19b5695c",
     "https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/modules/rules_cc/0.0.8/MODULE.bazel": "964c85c82cfeb6f3855e6a07054fdb159aced38e99a5eecf7bce9d53990afa3e",
@@ -85,188 +86,6 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
-    "//:maven_cpp_deps.bzl%setup_bzlmodrio_navx_cpp_dependencies": {
-      "general": {
-        "bzlTransitiveDigest": "lGqR9RRC796ddK2Yw4/ZftEQMEVH3l8dfDRBcQgD25s=",
-        "usagesDigest": "MqYznccKF9MHV6ExmU7L/iPcYFFKQ/0TksDIBqo5YpY=",
-        "recordedFileInputs": {},
-        "recordedDirentsInputs": {},
-        "envVariables": {},
-        "generatedRepoSpecs": {
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_sources": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-sources.zip",
-              "sha256": "bf4f241c8d77635808361ff29610905caf1aaec487afc57b683b68bdb0d022e4",
-              "build_file_content": "filegroup(\n     name = \"sources\",\n     srcs = glob([\"**\"]),\n     visibility = [\"//visibility:public\"],\n )\n "
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversal": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-osxuniversal.zip",
-              "sha256": "f7071c93c955993047334c6371127646ab115b0214d787709ef76e2b986f5939",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel",
-              "patch_cmds": [
-                "install_name_tool -id @rpath/libnavx-frc.dylib osx/universal/shared/libnavx-frc.dylib"
-              ]
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_osxuniversalstatic": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-osxuniversalstatic.zip",
-              "sha256": "dae37dd3dd9acd508bf55911003bc6f90f554c14af371611be32dc70a58dcbe4",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64static": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm64static.zip",
-              "sha256": "d1681379262fb8a219c29be889ba5658af4f406e6f964b6f25d26138377f9259",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathena": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxathena.zip",
-              "sha256": "b4d769a50ad02eded2064f7d927850356e2f5af52e99086b67f05c132c81aeeb",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxx86-64.zip",
-              "sha256": "914047f2b7994abb5ee3140b9d4f5836306f500fbc80ea804b834f199b845de5",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm32.zip",
-              "sha256": "9b2fe6c02b8547b9e13d8fa7672aa806b16a06ce817dfb5a1e5f25d2e59b3012",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm64": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm64.zip",
-              "sha256": "8575c1d847f4ce9f753d74a85b6ff41b309a802d485784eff15469a8c400fe8c",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxathenastatic": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxathenastatic.zip",
-              "sha256": "62566103a535d52c6a93adae98aaf283b40e3937098162748c7cc8994e8514bf",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxx86-64static": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxx86-64static.zip",
-              "sha256": "8a989adbfafb5021825ec4ba61f70c968b4ff463c4d4bfa3b57dc06682552206",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_headers": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-headers.zip",
-              "sha256": "529b0cffa28af1a69e4916179cffd1c034b7eeb419adca6cdc941cd34bd0c6f0",
-              "build_file_content": "cc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_linuxarm32static": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-linuxarm32static.zip",
-              "sha256": "81437525d2b7ce54c0cb20493198958e7f52275a70e8996a3be9bbc6ef9d7d85",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-windowsx86-64.zip",
-              "sha256": "5f4c66f623ca7679538cb9d80acfbb85a29c86a53a0542b17406ad1eafafd7dd",
-              "build_file": "@@//private/cpp/navx-frc-cpp:shared.BUILD.bazel"
-            }
-          },
-          "bazelrio_com_kauailabs_navx_frc_navx-frc-cpp_windowsx86-64static": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_archive",
-            "attributes": {
-              "url": "https://dev.studica.com/maven/release/2024/com/kauailabs/navx/frc/navx-frc-cpp/2024.1.0/navx-frc-cpp-2024.1.0-windowsx86-64static.zip",
-              "sha256": "75c6e79fc261918e0d120755aa1a7e2291adac99336727624a403e7de09dca98",
-              "build_file": "@@//private/cpp/navx-frc-cpp:static.BUILD.bazel"
-            }
-          }
-        },
-        "recordedRepoMappingEntries": [
-          [
-            "",
-            "bazel_tools",
-            "bazel_tools"
-          ]
-        ]
-      }
-    },
-    "//:maven_java_deps.bzl%setup_bzlmodrio_navx_java_dependencies": {
-      "general": {
-        "bzlTransitiveDigest": "yFFJdJWDpm0sDZP4a3BFTFLpJ4z8+nLyqSiaSTLDxlo=",
-        "usagesDigest": "7EjKKQ2lwMVjpIcG4BdvvZqMksK0vwFxlHgeOVE6/Tc=",
-        "recordedFileInputs": {},
-        "recordedDirentsInputs": {},
-        "envVariables": {},
-        "generatedRepoSpecs": {
-          "com_kauailabs_navx_frc_navx_frc_java": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:jvm.bzl",
-            "ruleClassName": "jvm_import_external",
-            "attributes": {
-              "generated_rule_name": "com_kauailabs_navx_frc_navx_frc_java",
-              "artifact_urls": [
-                "https://dev.studica.com/maven/release/2025/com/kauailabs/navx/frc/navx_frc-java/2025.1.1-beta-1/navx_frc-java-2025.1.1-beta-1.jar"
-              ],
-              "srcjar_urls": [],
-              "canonical_id": "com.kauailabs.navx.frc:navx_frc-java:2025.1.1-beta-1",
-              "rule_name": "java_import",
-              "tags": [
-                "maven_coordinates=com.kauailabs.navx.frc:navx_frc-java:2025.1.1-beta-1"
-              ],
-              "artifact_sha256": "8c0f98dc881f821928fa33b4375ad1458708035a9cb878c20fc7357e5d82e1bf"
-            }
-          }
-        },
-        "recordedRepoMappingEntries": [
-          [
-            "",
-            "bazel_tools",
-            "bazel_tools"
-          ]
-        ]
-      }
-    },
     "@@apple_support~//crosstool:setup.bzl%apple_cc_configure_extension": {
       "general": {
         "bzlTransitiveDigest": "PjIds3feoYE8SGbbIq2SFTZy3zmxeO2tQevJZNDo7iY=",
