@@ -38,15 +38,16 @@ def get_studica_dependencies(
                 artifact_install_name="StudicaDriver",
                 deps=[
                     allwpilib_dependency.container.get_cc_dependency("hal-cpp"),
-                ], 
+                    allwpilib_dependency.container.get_cc_dependency("wpimath-cpp"),
+                ],
             ),
             "Studica-cpp": dict(
                 artifact_install_name="Studica",
                 deps=[
                     allwpilib_dependency.container.get_cc_dependency("wpiutil-cpp"),
                     allwpilib_dependency.container.get_cc_dependency("ntcore-cpp"),
-                ], 
-            )
+                ],
+            ),
         },
     )
     group.add_module_dependency(allwpilib_dependency)
