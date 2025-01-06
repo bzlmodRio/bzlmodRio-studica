@@ -39,6 +39,7 @@ def get_studica_dependencies(
                 deps=[
                     allwpilib_dependency.container.get_cc_dependency("hal-cpp"),
                     allwpilib_dependency.container.get_cc_dependency("wpimath-cpp"),
+                    allwpilib_dependency.container.get_cc_dependency("wpinet-cpp"),
                 ],
             ),
             "Studica-cpp": dict(
@@ -58,6 +59,7 @@ def get_studica_dependencies(
             "Studica-driver",
             "hal-cpp",
             "wpimath-cpp",
+            "wpinet-cpp",
         ],
         platform_deps={},
     )

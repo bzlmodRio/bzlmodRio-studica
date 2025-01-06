@@ -13,6 +13,7 @@ cc_library(
     deps = [
         "@bzlmodrio-allwpilib//libraries/cpp/hal:shared",
         "@bzlmodrio-allwpilib//libraries/cpp/wpimath:shared",
+        "@bzlmodrio-allwpilib//libraries/cpp/wpinet:shared",
         "@bzlmodrio-studica//private/cpp/Studica-driver:shared",
     ],
 )
