@@ -26,85 +26,85 @@ def __setup_bzlmodrio_studica_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_headers",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-headers.zip",
-        sha256 = "bebf441979484ee699a330f82ab402b5363edc4a05522485a653e07263ae826a",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-headers.zip",
+        sha256 = "dcdc988f966815f31ad1c190e6dd52192f9ae8f8b9bc2c77529fd065156d8148",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_windowsx86-64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-windowsx86-64.zip",
-        sha256 = "84c9ac6284c7b7ad02a64b24598a4173211e918613647ef721d091666f67e002",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-windowsx86-64.zip",
+        sha256 = "f5d31621fbc82ff0b981e382a06a1b068128091e1cd3fcc291899394b7f5e98e",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_windowsx86-64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-windowsx86-64static.zip",
-        sha256 = "cfebec9aff50d3eebd69487ced6efe1234844829daac4ea22ecdb56894930312",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-windowsx86-64static.zip",
+        sha256 = "787f9b733672a688ad011f66edfaf87835f22cde1fdbcb8aa0b5a743691d4452",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxarm64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxarm64.zip",
-        sha256 = "0f3c3dcb02d173aa9d4d25db57cef4e4b00e87288c70b8e38f204b7c50e0e7bb",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxarm64.zip",
+        sha256 = "d1ee6e46d969a519059a1f2599e375394b303391111410f41e97bb13a85f1bbe",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxarm64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxarm64static.zip",
-        sha256 = "72ca1c0d9f8dc00a8612f22bc584d3c385e6b41f3578ded615113928d46f5b5c",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxarm64static.zip",
+        sha256 = "cf1d1fb558afdc2f15f3537e0fcf646b1595d56948c20b911927d29368987236",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxx86-64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxx86-64.zip",
-        sha256 = "c1d71e47b63867679d09bc232aafce8f17e9e1d5e23940ed74cebef3a01d99a1",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxx86-64.zip",
+        sha256 = "aa026772a4a669532fae8e3a0e9cca99edcdce12288e70c4f95f4d19160f7db3",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxx86-64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxx86-64static.zip",
-        sha256 = "a79272ea6969f1b7a4905ac5ecd2f2ee02c3353e3bcdc27446db98931fd1dd4e",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxx86-64static.zip",
+        sha256 = "15cadaa53b0bc61444b6dbeab27a873242d416a9e22c41607dcf656b3824a844",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxathena",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxathena.zip",
-        sha256 = "f77e0da8314c61b35fcd443f396a7004d03ea0c049eb582400107186f2d7a6d6",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxathena.zip",
+        sha256 = "81533bc75e93a967bdb39b502ae35cfb9ece62b3ab2cb9e7935b659e58a94c5b",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxathenastatic",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxathenastatic.zip",
-        sha256 = "02c264ec3c8c763d50741b577125f9dc09acb403a1ce6898bf22efa8d712496d",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxathenastatic.zip",
+        sha256 = "8024ee13f20fdbb59c8edcef8a0cc9dda05a8ba85d0888b6d437ea489809dcf2",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxarm32",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxarm32.zip",
-        sha256 = "0736d333e5263cea524a6a5f13872d73e4a73ab5b3586f2e3961936266c64133",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxarm32.zip",
+        sha256 = "0a9d8bdb5c3cbe048e8ac1aab6e3fb8cd5ae19d159ee68ae5174653c7235faea",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_linuxarm32static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-linuxarm32static.zip",
-        sha256 = "de0e66759f8a84956456f99561bd96b56a666312c7fc0f944fba1e829ecd33bd",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-linuxarm32static.zip",
+        sha256 = "22d019f1081cdaaa3579395e4fe34b76acaef0122c4b48d2ac02f120ee008961",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_osxuniversal",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-osxuniversal.zip",
-        sha256 = "fa254a296da85a1a49130c40453b6bfd8718f3acc5d55702abc3aa5a99d9e575",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-osxuniversal.zip",
+        sha256 = "fad0000b6581ce2857b0761845df1ccef9fcd759b1d616b0846d00cf2a8de2f2",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:shared.BUILD.bazel",
         patch_cmds = [
             "install_name_tool -id @rpath/libStudica.dylib osx/universal/shared/libStudica.dylib",
@@ -116,92 +116,92 @@ def __setup_bzlmodrio_studica_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-cpp_osxuniversalstatic",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0-beta/Studica-cpp-2026.0.0-beta-osxuniversalstatic.zip",
-        sha256 = "076e970d675c2c4c3c9a198da4c38401bd2d9830e3cc5775dc066499ef478cfd",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-cpp/2026.0.0/Studica-cpp-2026.0.0-osxuniversalstatic.zip",
+        sha256 = "1398511ba5703e5db87a88f7187c879b1e55395925eb9bb34d777629b00d730b",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-cpp:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_headers",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-headers.zip",
-        sha256 = "6542a526cadbacdc75495ac8a531d70d463dd7072e39aefe9c39d4d7a8d04d5d",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-headers.zip",
+        sha256 = "33d76913d51dbe3ab80c63cb1874dd05ef2270abc7b1da9543c169bc5cad5767",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_windowsx86-64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-windowsx86-64.zip",
-        sha256 = "1c54c1822670ab1d5de09203679b1106d49bc9368eda1938edc8e0efeb0dbeb3",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-windowsx86-64.zip",
+        sha256 = "4c49560846798069c226d00bcf6ed3c4e72bce796ff5a3ee7df0121bb2acfa97",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_windowsx86-64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-windowsx86-64static.zip",
-        sha256 = "d1628fee50b951045d353fddc16c8cc7bed4f7b78cd3d5a004ca93e2702e0952",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-windowsx86-64static.zip",
+        sha256 = "784739e5b7396bea53713d5879e60342dafbdca23a9212e4e746508da3c548c4",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxarm64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxarm64.zip",
-        sha256 = "0c03ab9d616b3d93857af024b3bac7aaf27f67b74efaaad5ac002001abba010c",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxarm64.zip",
+        sha256 = "471b89b00d287fca55da06ae916ebf317c5954efb48b071e4157d9f294f8f926",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxarm64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxarm64static.zip",
-        sha256 = "f06756dfb6a9ea9538939e3d8fdac029d4279238451c0e7dd5deac88339458cb",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxarm64static.zip",
+        sha256 = "009aba273e5224272bfcbdb5d5184dc8c59e7a9f0b0ad79b88b5bd43d214981c",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxx86-64",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxx86-64.zip",
-        sha256 = "d24fe5ace924627af057a58667b68c2ea26c1695d3f90b443ab4014eb850dfd7",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxx86-64.zip",
+        sha256 = "ce886e57bd3f8aa1c52a1438bef5495662ce49c61b999d316074e660c4110775",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxx86-64static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxx86-64static.zip",
-        sha256 = "5772388d66c617811744b1eefd94169e646dda78b5f675d5af894113a84f6d3d",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxx86-64static.zip",
+        sha256 = "c37f83689f4bc90d7198a4c37fd2d798a287b6db2de0aafc391bf6b6e0389385",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxathena",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxathena.zip",
-        sha256 = "5ba2a0511ff4699e8a156fe82d541a4c2a402b21eaf2c6d59daa14acee338090",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxathena.zip",
+        sha256 = "b9ab7b0552ba00e192e5cc80a1468cc8f480bf46383289076092f489503e1499",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxathenastatic",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxathenastatic.zip",
-        sha256 = "4132e09c8a92833d7ed6114f214dbfa047749f5fe72aebaf32ff6264b0a155f0",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxathenastatic.zip",
+        sha256 = "54c70c9ae4184e34378c389c97c09b87ef03e131f4262fb3cc0e463f222bc100",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxarm32",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxarm32.zip",
-        sha256 = "1ca3cd953de40bdfeb850bf7db5e9edca5cb99e7a1d1c22031ab6b51f0577430",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxarm32.zip",
+        sha256 = "7690dfe773094868d2880fecb99ab783d9dfbbb7deeee22e683fe196f213357a",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_linuxarm32static",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-linuxarm32static.zip",
-        sha256 = "ac7d07c1017edbc7a5f1f8630918b289eaf5d77d705b11c541d5eaf30981b25b",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-linuxarm32static.zip",
+        sha256 = "b417a6022345faf768db5b8e40e6ea878ba0a7d6a10aeb7b5c8e432908bdc10c",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_osxuniversal",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-osxuniversal.zip",
-        sha256 = "b62d8eee7c88945463aec1b83cbb0733170be99e640558634d71c3a47ae8b2c7",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-osxuniversal.zip",
+        sha256 = "b1c07220b63bd83dca3f5c1b0ae3a8850de39ff9af79e7b413c69593bd9fb33f",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:shared.BUILD.bazel",
         patch_cmds = [
             "install_name_tool -id @rpath/libStudicaDriver.dylib osx/universal/shared/libStudicaDriver.dylib",
@@ -214,8 +214,8 @@ def __setup_bzlmodrio_studica_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_studica_frc_studica-driver_osxuniversalstatic",
-        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0-beta/Studica-driver-2026.0.0-beta-osxuniversalstatic.zip",
-        sha256 = "6713e473a1a7525b9f8ccd140674d82dc917bc4501edae4992c5c13bf3a3e398",
+        url = "https://dev.studica.com/maven/release/2026/com/studica/frc/Studica-driver/2026.0.0/Studica-driver-2026.0.0-osxuniversalstatic.zip",
+        sha256 = "2f8a111ce66c4ffe1f3282171b3b4e753af1d9e0c9e353656e4fb0c43b719e76",
         build_file = "@bzlmodrio-studica//private/cpp/Studica-driver:static.BUILD.bazel",
     )
 
